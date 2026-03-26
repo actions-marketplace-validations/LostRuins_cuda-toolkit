@@ -1,5 +1,5 @@
-name: 'cuda-toolkit'
-description: 'Installs NVIDIA CUDA Toolkit and adds it to PATH'
+name: 'cuda-toolkit-koboldcpp'
+description: 'Installs NVIDIA CUDA Toolkit and adds it to PATH. Modified for use in KoboldCpp'
 author: 'Jim Verheijde'
 inputs:
   cuda:
@@ -60,7 +60,7 @@ outputs:
   cuda:
     description: 'Version of CUDA installed'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: dist/index.js
 branding:
   icon: box
